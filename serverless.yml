@@ -1,0 +1,23 @@
+service: test
+
+provider:
+  name: aws
+  runtime: java8
+
+stage: dev
+region: us-east-1
+
+package:
+  artifact: build/libs/slskotlin-dev-all.jar
+
+functions:
+  hello:
+    handler: jp.tukiyo.serverless.Handler
+    events:
+      - http:
+          path: hoge/{id}
+          method: get
+          request:
+            parameters:
+              paths:
+                id: true
