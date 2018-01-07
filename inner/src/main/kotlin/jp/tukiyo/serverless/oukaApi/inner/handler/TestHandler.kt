@@ -1,6 +1,11 @@
-package jp.tukiyo.serverless
+package jp.tukiyo.serverless.oukaApi.inner.handler
 
-class Handler : BaseHandler() {
+import jp.tukiyo.serverless.oukaApi.core.ApiGatewayResponse
+import jp.tukiyo.serverless.oukaApi.core.BaseHandler
+import jp.tukiyo.serverless.oukaApi.core.Request
+import jp.tukiyo.serverless.oukaApi.inner.response.HelloResponse
+
+class TestHandler : BaseHandler() {
 
     override fun handleRequest(request: Request): ApiGatewayResponse {
         return ApiGatewayResponse.build {

@@ -1,4 +1,4 @@
-package jp.tukiyo.serverless
+package jp.tukiyo.serverless.oukaApi.core
 
 import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.ObjectMapper

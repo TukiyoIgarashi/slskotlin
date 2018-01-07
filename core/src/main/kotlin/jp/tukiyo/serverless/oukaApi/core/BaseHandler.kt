@@ -1,4 +1,4 @@
-package jp.tukiyo.serverless
+package jp.tukiyo.serverless.oukaApi.core
 
 import com.amazonaws.services.lambda.runtime.Context
 import com.amazonaws.services.lambda.runtime.RequestHandler

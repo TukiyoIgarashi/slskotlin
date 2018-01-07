@@ -1,4 +1,4 @@
-service: test
+service: inner
 
 provider:
   name: aws
@@ -8,11 +8,11 @@ stage: dev
 region: us-east-1
 
 package:
-  artifact: build/libs/slskotlin-dev-all.jar
+  artifact: build/libs/inner-all.jar
 
 functions:
   hello:
-    handler: jp.tukiyo.serverless.Handler
+    handler: jp.tukiyo.serverless.oukaApi.inner.handler.TestHandler
     events:
       - http:
           path: hoge/{id}

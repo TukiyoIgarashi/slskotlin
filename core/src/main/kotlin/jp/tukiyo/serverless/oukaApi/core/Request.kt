@@ -1,4 +1,4 @@
-package jp.tukiyo.serverless
+package jp.tukiyo.serverless.oukaApi.core
 
 import org.apache.logging.log4j.LogManager
 import java.io.Serializable
