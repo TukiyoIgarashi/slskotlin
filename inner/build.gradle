@@ -25,3 +25,13 @@ dependencies {
 task deploy(type: Exec, dependsOn: 'shadowJar') {
     commandLine 'serverless', 'deploy'
 }
+
+Map<String, String> getSystemProperties() {
+    return [
+            'JDBC_CONNECTION_STRING':  berserker.local.database.connectionString,
+            'DB_USERNAME':             berserker.local.database.user,
+            'DB_PASSWORD':             berserker.local.database.password,
+            'spring.profiles.active':  berserker.local.springProfile,
+            'logging.config':          berserker.local.logbackConfigurationFile
+    ]
+}

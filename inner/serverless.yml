@@ -5,7 +5,7 @@ provider:
   runtime: java8
 
 stage: dev
-region: us-east-1
+region: us-west-2
 
 package:
   artifact: build/libs/inner-all.jar

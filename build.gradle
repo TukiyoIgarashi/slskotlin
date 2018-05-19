@@ -1,6 +1,7 @@
 
 version = 'dev'
 
+
 subprojects {
     tasks.withType(JavaCompile) {
         options.encoding = 'UTF-8'
@@ -12,4 +13,6 @@ subprojects {
     repositories {
         maven { url "http://repo.maven.apache.org/maven2" }
     }
+
+
 }
